@@ -23,7 +23,10 @@ const QuoteList = (props) => {
 	const sortingQuotes = sortQuotes(props.quotes, ascSorting);
 
 	function sortHandler(envent) {
-		history.push('/quotes?sort=' + (ascSorting ? 'desc' : 'asc'));
+		history.push({
+			pathname: location.pathname,
+			search: `?sort=${ascSorting ? 'desc' : 'asc'}`,
+		});
 	}
 	return (
 		<Fragment>
