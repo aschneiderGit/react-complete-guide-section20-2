@@ -1,5 +1,4 @@
 import Layout from './components/layout/Layout';
-import MainNavigation from './components/layout/MainNavigation';
 import AllQuotes from './pages/AllQuotes';
 import NewQuote from './pages/NewQuote';
 import QuoteDetail from './pages/QuoteDetail';
